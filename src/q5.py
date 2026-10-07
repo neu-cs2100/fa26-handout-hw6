@@ -22,12 +22,12 @@ repositories on GitHub can expose themselves to privacy risks.) You can do this 
 "user_agent.txt" to your ".gitignore" file, or simply not `git add`ing it.
 
 If this code works, it will print a URL. Navigate to that URL in a browser, and copy
-the contents of that page into q1_contents.txt. (Replace the text that is currently 
+the contents of that page into q5_contents.txt. (Replace the text that is currently 
 in the file.) It is weather info.
 
 The autograder for this question checks only two things:
 1. There is not a file called "user_agent.txt"
-2. The contents of "q1_contents.txt" match what we expect from that URL
+2. The contents of "q5_contents.txt" match what we expect from that URL
 """
 
 from pprint import pprint
