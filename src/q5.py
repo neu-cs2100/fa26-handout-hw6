@@ -68,7 +68,7 @@ class WeatherURL:
         """
         headers = {'User-Agent': self._user_agent}
         url = f'https://api.weather.gov/points/{latitude},{longitude}'
-        request = requests.get(url, headers=headers)
+        request = requests.get(url, headers=headers, timeout=10)
         request.raise_for_status()
         data = request.json()
         if 'properties' not in data or 'forecast' not in data.get('properties'):
