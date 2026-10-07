@@ -6,9 +6,9 @@
 
 In this homework assignment, you will practice:
 
+- Processing tabular data using Pandas
 - Working with sets
 - Working with dicts
-- Processing tabular data using Pandas
 - Raising custom Errors
 
 You can find the instructions for each question in the corresponding files in the `src` directory. The corresponding tests are in the `tests` directory.
