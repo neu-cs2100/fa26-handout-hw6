@@ -30,7 +30,7 @@ class TestWeatherForecast:
                 wf.get_weather(1.3, -2.4)
                 mock_get_weather_url.assert_called_with(1.3, -2.4)
 
-    def test_get_weather(self) -> None:
+    def test_get_weather_has_columns(self) -> None:
         """Tests that the dataframe returned by WeatherForecast.get_weather() 
         has the correct columns and types"""
         wf = WeatherForecast('tests/_user_agent.txt')
