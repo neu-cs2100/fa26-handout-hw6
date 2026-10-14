@@ -39,13 +39,13 @@ from src.q3 import next_letter_frequency
 
 def main() -> None:
     """Generate text using a small language model and a prompt."""
-    n = 2
+    n = 3
     training_text = 'catcatcat' # you should replace this with longer text from a file
     n_gram_counts = CharNGramCounter(training_text, n).get_ngram_counts()
     output_text = 'cat'
 
     for _ in range(1, 20):
-        next_letter = generate_next_char(output_text[-n:], n_gram_counts)
+        next_letter = generate_next_char(output_text[-(n-1):], n_gram_counts)
         output_text += next_letter
     print(output_text)
 

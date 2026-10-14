@@ -28,7 +28,7 @@ than a direct reference to it.
 
 Example usage:
     counter = CharNGramCounter("chocococo", 4)
-    print(counter.get_ngrams())  # {'choc', 'hoco', 'ococ', 'coco', 'cola'}
+    print(counter.get_ngrams())  # {'choc', 'hoco', 'ococ', 'coco'}
     print(counter.get_ngram_counts())  # {'choc': 1, 'hoco': 1, 'ococ': 2, 'coco': 2}
 
 Make sure to write appropriate documentation and tests.

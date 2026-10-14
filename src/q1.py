@@ -3,7 +3,7 @@
 Please use the dataset provided in spam.csv.
 The original dataset is available at 
 https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
-Please ignore the rows that do not follow the correct format.
+Please drop the rows that do not follow the correct format.
 
 Please implement a class called `SpamReader` that reads the dataset 
 into a Pandas dataframe and provides methods to access the data.
