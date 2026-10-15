@@ -9,9 +9,11 @@ Please implement a class called `SpamReader` that reads the dataset
 into a Pandas dataframe and provides methods to access the data.
 
 The constructor should take the name of the file (e.g., 'spam.csv') as an argument
-and store the dataframe as an instance variable. It should rename the dataframe's columns 
-to 'label' and 'message'. The constructor should raise a `ValueError` if the file does not 
-exist.
+and store the dataframe (just the 'label' and 'message' columns) as an instance variable. 
+If the dataset does not have 'label' and 'message' columns, it should raise a `ValueError`.
+It should drop all other columns and also drop the rows that do not follow the correct 
+format after dropping the extra columns. The constructor should raise a `ValueError` if the 
+file does not exist.
 
 It should have a method called `get_first_five_rows` that returns the first five rows 
 of the dataset as a dataframe as a Pandas dataframe.
